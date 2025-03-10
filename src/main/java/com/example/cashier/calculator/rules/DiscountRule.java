@@ -28,10 +28,6 @@ public class DiscountRule extends ProductRule {
         return 1 - discount;
     }
 
-    public int getMaxPurchase() {
-        return maxPurchase;
-    }
-
     @Override
     public boolean isApplicable(int quantity) {
         return quantity >= minPurchase() && (quantity <= maxPurchase || maxPurchase == -1);

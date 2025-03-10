@@ -1,6 +1,5 @@
 package com.example.cashier.calculator;
 
-import com.example.cashier.DefaultRule;
 import com.example.cashier.Product;
 import com.example.cashier.calculator.rules.DiscountRule;
 import com.example.cashier.calculator.rules.FreeArticleRule;
@@ -13,9 +12,6 @@ import java.util.Map;
 import static com.example.cashier.Product.*;
 
 public class RuleCatalog {
-
-    public static final DefaultRule DEFAULT_RULE = new DefaultRule(null,
-            1);
 
     private static final FreeArticleRule RULE_1 = new FreeArticleRule(
             "3 free Article 5 when purchasing Article 7",

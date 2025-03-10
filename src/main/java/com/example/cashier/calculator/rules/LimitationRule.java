@@ -11,10 +11,6 @@ public class LimitationRule extends ProductRule {
         }
     }
 
-    public int getMaxPurchase() {
-        return maxPurchase;
-    }
-
     @Override
     public boolean isApplicable(int quantity) {
         return quantity > maxPurchase;
